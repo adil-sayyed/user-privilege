@@ -56,3 +56,40 @@
   alert('You have sended your selection.');
   closePopup('send-popup');
   }
+
+  function showDiv(index) {
+    // Log the div being shown (optional for debugging)
+    console.log("Div to show:", index);
+  
+    // Update the navbar title dynamically
+    const navbarTitle = document.getElementById('navbar-title');
+    const titles = [
+      "Permissions Dashboard", // For showDiv(0)
+      "All Requests",          // For showDiv(1)
+      "Pending Requests",      // For showDiv(2)
+      "Rejected Requests",     // For showDiv(3)
+      "Approved Requests",     // For showDiv(4)
+      "Cancelled Requests"     // For showDiv(5)
+    ];
+  
+    // Ensure the index is within bounds of the titles array
+    if (index >= 0 && index < titles.length) {
+      navbarTitle.textContent = titles[index];
+    }
+  
+    // Hide all divs
+    const divs = document.querySelectorAll('.hidden-div');
+    divs.forEach(div => div.classList.add('hidden'));
+  
+    // Show the selected div
+    const selectedDiv = document.getElementById(`div-${index}`);
+    if (selectedDiv) {
+      selectedDiv.classList.remove('hidden');
+    }
+  
+    // Hide the dropdown menu if visible
+    const dropdownMenu = document.getElementById('dropdown-menu');
+    if (dropdownMenu) {
+      dropdownMenu.classList.add('hidden');
+    }
+  }

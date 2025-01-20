@@ -445,7 +445,7 @@ body .cm {
 }
 
 .uspr-tab-control:active {
-  border-color: var(--color-dark-yellow)
+  border-color: var(--color-dark-yellow);
 }
 
 
@@ -1147,4 +1147,11 @@ body .cm {
   color: white;
   cursor: pointer;
   border-radius: 5px;
+}
+
+.drop-menu-buttn{
+  font-size: medium;
+}
+.drop-menu-buttn:hover{
+  background: var(--color-dark-yellow);
 }

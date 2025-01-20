@@ -285,7 +285,7 @@
                                     User Privilege
                                 </span>
                                 <i class="ri-arrow-right-line ri-lg text-c-light-black"></i>
-                                <span class="font-semibold text-c-black w-48">
+                                <span id="navbar-title" class="font-semibold text-c-black w-48">
                                     Permissions Dashboard 
                                 </span>
                             </div>
@@ -306,20 +306,7 @@
                             <i class="ri-search-line"></i>
                         </div>
                         </div>
-                        <!-- <button
-                        class="flex items-center border px-3 hover-bg-c-black hover-text-c-yellow text-sm py-1 rounded border-gray-600 hidden md:flex"
-                        id="cancelbutton"
-                        >
-                        <i class="ri-close-circle-fill"></i>
-                        <span class="pl-1">Cancel</span>
-                        <span class="pl-1">Sharing</span>
-                        </button>
-                        <button
-                        class="flex items-center border px-3 hover-bg-c-black hover-text-c-yellow text-sm py-1 rounded border-gray-600 export"
-                        >
-                        <i class="ri-download-line"></i>
-                        <span class="pl-1">Export</span>
-                        </button> -->
+                        
                     </div>
                     </div>
                     <!-- searchbar in mobile-->
@@ -339,15 +326,15 @@
                         
                         <!-- Button -->
                         <div class="flex flex-wrap gap-2 md:gap-10">
-                            <button onclick="showDiv(0)" class="font-semibold uspr-tab-control">Permissions Dashboard </button>
+                            <button onclick="showDiv(0)" class=" uspr-tab-control">Permissions Dashboard </button>
                             <div class="relative inline-block ml-2">
-                                <button onclick="toggleDropdown(event)" class="font-semibold relative">Request Status <i class="ri-arrow-down-s-fill"></i></button>
+                                <button onclick="toggleDropdown(event)" class=" relative uspr-tab-control">Request Status <i class="ri-arrow-down-s-fill"></i></button>
                                 <div id="dropdown-menu" class="absolute mt-2 w-48 bg-white shadow-lg rounded-md border border-gray-200 hidden">
-                                    <button onclick="showDiv(1)" class="block w-full text-left px-4 py-2 hover:bg-gray-100">All Requests</button>
-                                    <button onclick="showDiv(2)" class="block w-full text-left px-4 py-2 hover:bg-gray-100">Pending Requests</button>
-                                    <button onclick="showDiv(3)" class="block w-full text-left px-4 py-2 hover:bg-gray-100">Rejected Requests</button>
-                                    <button onclick="showDiv(4)" class="block w-full text-left px-4 py-2 hover:bg-gray-100">Approved Requests</button>
-                                    <button onclick="showDiv(5)" class="block w-full text-left px-4 py-2 hover:bg-gray-100">Cancelled Request</button>
+                                    <button onclick="showDiv(1)" class="block w-full text-left px-4 py-2 drop-menu-buttn">All Requests</button>
+                                    <button onclick="showDiv(2)" class="block w-full text-left px-4 py-2 drop-menu-buttn">Pending Requests</button>
+                                    <button onclick="showDiv(3)" class="block w-full text-left px-4 py-2 drop-menu-buttn">Rejected Requests</button>
+                                    <button onclick="showDiv(4)" class="block w-full text-left px-4 py-2 drop-menu-buttn">Approved Requests</button>
+                                    <button onclick="showDiv(5)" class="block w-full text-left px-4 py-2 drop-menu-buttn">Cancelled Request</button>
                                 </div>
                             </div>
                         </div>
