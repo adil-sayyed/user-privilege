@@ -444,9 +444,10 @@ body .cm {
   border-color: var(--color-dark-yellow);
 }
 
-.uspr-tab-control:active {
+.uspr-tab-control.active {
   border-color: var(--color-dark-yellow);
 }
+
 
 
 .button-rest{
