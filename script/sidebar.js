@@ -28,3 +28,10 @@ function toggleSubDropMenu() {
     subDrop.classList.toggle("hidden");
     arrow.classList.toggle("rotate");
 }
+//sub dropdown toggle
+function toggleSubDropMenus() {
+    const subDrop = document.getElementById("subdrop-menu2");
+    const arrow = document.querySelector("#starred-link .subdrop-right-arrows");
+    subDrop.classList.toggle("hidden");
+    arrow.classList.toggle("rotate");
+}
