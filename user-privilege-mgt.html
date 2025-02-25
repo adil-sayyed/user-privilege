@@ -12,346 +12,371 @@
         <main class="flex w-full h-full cm lightapp">
             <!-- Slider section -->
             <aside class="h-full relative">
-                <input type="checkbox" class="hidden" id="sidebar-toggle" />
-                <label
-                  for="sidebar-toggle"
-                  class="absolute lg:hidden top-1 -right-8 px-1"
-                >
-                  <i class="ri-bar-chart-horizontal-line"></i>
-                </label>
-                <div class="h-full sidebar">
-                  <div class="sidebar-container">
-                    <div class="p-6">
-                      <a href="index.html">
-                        <img class="w-20" src="/images/logo.png" alt="Dots Logo" />
-                      </a>
-                    </div>
-                    <div class="sidebar-content">
-                      <ul class="space-y-1">
-                        <li>
-                          <a
-                            class="w-full px-6 py-3 rounded-r-lg block flex justify-between items-center"
+              <input type="checkbox" class="hidden" id="sidebar-toggle" />
+              <label
+                for="sidebar-toggle"
+                class="absolute lg:hidden top-1 -right-8 px-1"
+              >
+                <i class="ri-bar-chart-horizontal-line"></i>
+              </label>
+              <div class="h-full sidebar">
+                <div class="sidebar-container">
+                  <div class="p-6">
+                    <a href="index.html">
+                      <img class="w-20" src="/images/logo.png" alt="Dots Logo" />
+                    </a>
+                  </div>
+                  <div class="sidebar-content">
+                    <ul class="space-y-1">
+                      <li>
+                        <a
+                          class="w-full px-6 py-3 rounded-r-lg block flex justify-between items-center"
+                          href="#"
+                        >
+                          <span class="font-normal"> Overview </span>
+                          <i
+                            class="ri-arrow-right-s-line text-c-yellow right-arrow text-2xl big-right-arrow"
+                          ></i>
+                        </a>
+                      </li>
+                      <li>
+                        <div
+                          role="button"
+                          onclick="toggleDropMenu(this)"
+                          class="drop-menu cursor-pointer rounded-r-lg"
+                        >
+                          <div
+                            class="w-full px-6 py-3 flex justify-between items-center"
                             href="#"
                           >
-                            <span class="font-normal"> Overview </span>
+                            <span class="font-normal"> Reports and Analytics </span>
                             <i
-                              class="ri-arrow-right-s-line text-c-yellow right-arrow text-2xl big-right-arrow"
+                              class="ri-arrow-right-s-line text-c-yellow transition-all text-2xl big-right-arrow"
                             ></i>
-                          </a>
-                        </li>
-                        <li>
-                          <div
-                            role="button"
-                            onclick="toggleDropMenu(this)"
-                            class="drop-menu cursor-pointer rounded-r-lg"
-                          >
-                            <div
-                              class="w-full px-6 py-3 flex justify-between items-center"
-                              href="#"
-                            >
-                              <span class="font-normal"> Reports and Analytics </span>
-                              <i
-                                class="ri-arrow-right-s-line text-c-yellow transition-all text-2xl big-right-arrow"
-                              ></i>
-                            </div>
-                            <ul class="drop-list text-sm space-y-1">
-                              <li>
-                                <a
-                                  href="system-setting-basic-page.html"
-                                  class="block py-2 px-8 rounded-r-md w-full flex justify-between items-center"
-                                >
-                                  <span class="font-normal">Activity Reports</span>
-                                  <i
-                                    class="ri-arrow-right-s-line text-c-yellow right-arrow text-2xl"
-                                  ></i>
-                                </a>
-                              </li>
-                              <li>
-                                <a
-                                  href="#"
-                                  class="block py-2 px-8 rounded-r-md w-full flex justify-between items-center"
-                                >
-                                  <span class="font-normal">Custom Graph</span>
-                                  <i
-                                    class="ri-arrow-right-s-line text-c-yellow right-arrow text-2xl"
-                                  ></i>
-                                </a>
-                              </li>
-                            </ul>
                           </div>
-                        </li>
-                        <li>
+                          <ul class="drop-list text-sm space-y-1">
+                            <li>
+                              <a
+                                href="system-setting-basic-page.html"
+                                class="block py-2 px-8 rounded-r-md w-full flex justify-between items-center"
+                              >
+                                <span class="font-normal">Activity Reports</span>
+                                <i
+                                  class="ri-arrow-right-s-line text-c-yellow right-arrow text-2xl"
+                                ></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a
+                                href="#"
+                                class="block py-2 px-8 rounded-r-md w-full flex justify-between items-center"
+                              >
+                                <span class="font-normal">Custom Graph</span>
+                                <i
+                                  class="ri-arrow-right-s-line text-c-yellow right-arrow text-2xl"
+                                ></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li>
+                        <div
+                          role="button"
+                          onclick="toggleDropMenu(this)"
+                          class="drop-menu cursor-pointer rounded-r-lg"
+                        >
                           <div
-                            role="button"
-                            onclick="toggleDropMenu(this)"
-                            class="drop-menu cursor-pointer rounded-r-lg"
+                            class="w-full px-6 py-3 flex justify-between items-center"
+                            href="#"
                           >
-                            <div
-                              class="w-full px-6 py-3 flex justify-between items-center"
-                              href="#"
-                            >
-                              <span class="font-normal"> System Settings </span>
-                              <i
-                                class="ri-arrow-right-s-line text-c-yellow transition-all text-2xl big-right-arrow"
-                              ></i>
-                            </div>
-                            <ul class="drop-list text-sm space-y-1">
-                              <li>
-                                <a
-                                  href="system-setting-basic-page.html"
-                                  class="block py-2 px-8 rounded-r-md w-full flex justify-between items-center"
-                                >
-                                  <span class="font-normal">Basic</span>
-                                  <i
-                                    class="ri-arrow-right-s-line text-c-yellow right-arrow text-2xl"
-                                  ></i>
-                                </a>
-                              </li>
-                              <li>
-                                <a
-                                  href="#"
-                                  class="block py-2 px-8 rounded-r-md w-full flex justify-between items-center"
-                                >
-                                  <span class="font-normal">Menu</span>
-                                  <i
-                                    class="ri-arrow-right-s-line text-c-yellow right-arrow text-2xl"
-                                  ></i>
-                                </a>
-                              </li>
-                              <li>
-                                <a
-                                  href="system-setting-notice.html"
-                                  class="block py-2 px-8 rounded-r-md w-full flex justify-between items-center"
-                                >
-                                  <span class="font-normal">Notice</span>
-                                  <i
-                                    class="ri-arrow-right-s-line text-c-yellow right-arrow text-2xl"
-                                  ></i>
-                                </a>
-                              </li>
-                              <li>
-                                <a
-                                  href="#"
-                                  class="block py-2 px-8 rounded-r-md w-full flex justify-between items-center"
-                                >
-                                  <span class="font-normal">Intranet Access</span>
-                                  <i
-                                    class="ri-arrow-right-s-line text-c-yellow right-arrow text-2xl"
-                                  ></i>
-                                </a>
-                              </li>
-                            </ul>
+                            <span class="font-normal"> System Settings </span>
+                            <i
+                              class="ri-arrow-right-s-line text-c-yellow transition-all text-2xl big-right-arrow"
+                            ></i>
                           </div>
-                        </li>
-                        <li>
+                          <ul class="drop-list text-sm space-y-1">
+                            <li>
+                              <a
+                                href="system-setting-basic-page.html"
+                                class="block py-2 px-8 rounded-r-md w-full flex justify-between items-center"
+                              >
+                                <span class="font-normal">Basic</span>
+                                <i
+                                  class="ri-arrow-right-s-line text-c-yellow right-arrow text-2xl"
+                                ></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a
+                                href="#"
+                                class="block py-2 px-8 rounded-r-md w-full flex justify-between items-center"
+                              >
+                                <span class="font-normal">Menu</span>
+                                <i
+                                  class="ri-arrow-right-s-line text-c-yellow right-arrow text-2xl"
+                                ></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a
+                                href="system-setting-notice.html"
+                                class="block py-2 px-8 rounded-r-md w-full flex justify-between items-center"
+                              >
+                                <span class="font-normal">Notice</span>
+                                <i
+                                  class="ri-arrow-right-s-line text-c-yellow right-arrow text-2xl"
+                                ></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a
+                                href="#"
+                                class="block py-2 px-8 rounded-r-md w-full flex justify-between items-center"
+                              >
+                                <span class="font-normal">Intranet Access</span>
+                                <i
+                                  class="ri-arrow-right-s-line text-c-yellow right-arrow text-2xl"
+                                ></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li>
+                        <div
+                          role="button"
+                          onclick="toggleDropMenu(this)"
+                          class="drop-menu cursor-pointer rounded-r-lg"
+                        >
                           <div
-                            role="button"
-                            onclick="toggleDropMenu(this)"
-                            class="drop-menu cursor-pointer rounded-r-lg"
+                            class="w-full px-6 py-3 flex justify-between items-center"
+                            href="#"
                           >
-                            <div
-                              class="w-full px-6 py-3 flex justify-between items-center"
-                              href="#"
-                            >
-                              <span class="font-normal"> User Management </span>
-                              <i
-                                class="ri-arrow-right-s-line text-c-yellow transition-all text-2xl big-right-arrow"
-                              ></i>
-                            </div>
-                            <ul class="drop-list text-sm space-y-1">
-                              <li>
-                                <a
-                                  href="admin&users-users&groups.html"
-                                  class="block py-2 px-8 rounded-r-md w-full flex justify-between items-center"
-                                >
-                                  <span class="font-normal">Users &amp; Groups </span>
-                                  <i
-                                    class="ri-arrow-right-s-line text-c-yellow right-arrow text-2xl"
-                                  ></i>
-                                </a>
-                              </li>
-                              <li>
-                                <a
-                                  href="system-setting-role.html"
-                                  class="block py-2 px-8 rounded-r-md w-full flex justify-between items-center"
-                                >
-                                  <span class="font-normal">Role</span>
-                                  <i
-                                    class="ri-arrow-right-s-line text-c-yellow right-arrow text-2xl"
-                                  ></i>
-                                </a>
-                              </li>
-                              <li>
-                                <a
-                                  href="admin&user-document-permission.html"
-                                  class="block py-2 px-8 rounded-r-md w-full flex justify-between items-center"
-                                >
-                                  <span class="font-normal">Document Permission</span>
-                                  <i
-                                    class="ri-arrow-right-s-line text-c-yellow right-arrow text-2xl"
-                                  ></i>
-                                </a>
-                              </li>
-                              <li>
-                                <a
-                                  href="#"
-                                  class="block py-2 px-8 rounded-r-md w-full flex justify-between items-center"
-                                >
-                                  <span class="font-normal">Intranet Access</span>
-                                  <i
-                                    class="ri-arrow-right-s-line text-c-yellow right-arrow text-2xl"
-                                  ></i>
-                                </a>
-                              </li>
-                            </ul>
+                            <span class="font-normal"> User Management </span>
+                            <i
+                              class="ri-arrow-right-s-line text-c-yellow transition-all text-2xl big-right-arrow"
+                            ></i>
                           </div>
-                        </li>
-                        <li>
-                          <div role="button" onclick="toggleDropMenu(this)" class="drop-menu cursor-pointer rounded-r-lg">
-                            <div class="w-full px-6 py-3 flex justify-between items-center" href="#">
-                              <span class="font-normal">Client Management</span>
-                              <i class="ri-arrow-right-s-line text-c-yellow transition-all text-2xl big-right-arrow"></i>
-                            </div>
-                            <ul class="drop-list text-sm space-y-1">
-                              <li>
-                                <a
-                                  id="Client"
-                                  class="block py-1 px-8 rounded-r-md w-full flex justify-between items-center subdrop"
-                                  onclick="event.stopPropagation();toggleSubDropMenu('subdrop-menu2', this)"
-                                >
-                                  <span>Client</span>
-                                  <i class="ri-arrow-right-s-line text-c-yellow text-2xl subdrop-right-arrow"></i>
-                                </a>
-                                <ul class="drop-list text-sm space-y-1 hidden" id="subdrop-menu2">
-                                  <li>
+                          <ul class="drop-list text-sm space-y-1">
+                            <li>
+                              <a
+                                href="admin&users-users&groups.html"
+                                class="block py-2 px-8 rounded-r-md w-full flex justify-between items-center"
+                              >
+                                <span class="font-normal">Users &amp; Groups </span>
+                                <i
+                                  class="ri-arrow-right-s-line text-c-yellow right-arrow text-2xl"
+                                ></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a
+                                href="system-setting-role.html"
+                                class="block py-2 px-8 rounded-r-md w-full flex justify-between items-center"
+                              >
+                                <span class="font-normal">Role</span>
+                                <i
+                                  class="ri-arrow-right-s-line text-c-yellow right-arrow text-2xl"
+                                ></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a
+                                href="admin&user-document-permission.html"
+                                class="block py-2 px-8 rounded-r-md w-full flex justify-between items-center"
+                              >
+                                <span class="font-normal">Document Permission</span>
+                                <i
+                                  class="ri-arrow-right-s-line text-c-yellow right-arrow text-2xl"
+                                ></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a
+                                href="#"
+                                class="block py-2 px-8 rounded-r-md w-full flex justify-between items-center"
+                              >
+                                <span class="font-normal">Intranet Access</span>
+                                <i
+                                  class="ri-arrow-right-s-line text-c-yellow right-arrow text-2xl"
+                                ></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li>
+                        <div role="button" onclick="toggleDropMenu(this)" class="drop-menu cursor-pointer rounded-r-lg">
+                          <div class="w-full px-6 py-3 flex justify-between items-center" href="#">
+                            <span class="font-normal">Client Management</span>
+                            <i class="ri-arrow-right-s-line text-c-yellow transition-all text-2xl big-right-arrow"></i>
+                          </div>
+                          <ul class="drop-list text-sm space-y-1">
+                            <li>
+                              <a
+                                id="Client"
+                                class="block py-1 px-8 rounded-r-md w-full flex justify-between items-center subdrop"
+                                onclick="event.stopPropagation();toggleSubDropMenus('subdrop-menu2', this)"
+                              >
+                                <span>Client</span>
+                                <i class="ri-arrow-right-s-line text-c-yellow text-2xl subdrop-right-arrows"></i>
+                              </a>
+                              <ul class="drop-list text-sm space-y-1 hidden" id="subdrop-menu2">
+                                <li>
+                                  <a href="#" class="block py-2 px-8 rounded-r-md w-full flex justify-between items-center">
+                                    <span>Client List</span>
+                                    
+                                  </a>
+                                </li>
+                                <li>
+                                  <a
+                                    href="#"
+                                    class="block py-2 px-8 rounded-r-md w-full flex justify-between items-center"
+                                  >
+                                    <span>Group</span>
+                                    
+                                  </a>
+                                </li>
+                                <li>
+                                  <a
+                                    href="#"
+                                    class="block py-2 px-8 rounded-r-md w-full flex justify-between items-center"
+                                  >
+                                    <span>Role</span>
+                                    
+                                  </a>
+                                </li>
+                                <li>
+                                  <a
+                                    href="#"
+                                    class="block py-2 px-8 rounded-r-md w-full flex justify-between items-center"
+                                  >
+                                    <span>User</span>
+                                    
+                                  </a>
+                                </li>
+                              </ul>
+                            </li>
+                            <li>
+                              <a
+                                id="Company"
+                                class="block py-1 px-8 rounded-r-md w-full flex justify-between items-center subdrop"
+                                onclick="event.stopPropagation();toggleSubDropMenu('subdrop-menu', this)"
+                              >
+                                <span>Company</span>
+                                <i class="ri-arrow-right-s-line text-c-yellow text-2xl subdrop-right-arrow"></i>
+                              </a>
+                              <ul class="drop-list text-sm space-y-1 hidden" id="subdrop-menu">
+                                <li>
+                                  <a href="#" class="block py-2 px-8 rounded-r-md w-full flex justify-between items-center">
+                                    <span>Company List</span>
+                                    
+                                  </a>
+                                </li>
+                                <li>
+                                  <a
+                                    href="#"
+                                    class="block py-2 px-8 rounded-r-md w-full flex justify-between items-center"
+                                  >
+                                    <span>Group</span>
+                                    
+                                  </a>
+                                </li>
+                                <li>
+                                  <a
+                                    href="#"
+                                    class="block py-2 px-8 rounded-r-md w-full flex justify-between items-center"
+                                  >
+                                    <span>Role</span>
+                                    
+                                  </a>
+                                </li>
+                                <li>
+                                  <a
+                                    href="#"
+                                    class="block py-2 px-8 rounded-r-md w-full flex justify-between items-center"
+                                  >
+                                    <span>User</span>
+                                    
+                                  </a>
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li>
+                        <div role="button" onclick="toggleDropMenu(this)" class="drop-menu cursor-pointer rounded-r-lg">
+                          <div class="w-full px-6 py-3 flex justify-between items-center" href="#">
+                            <span class="font-normal">Privilege Management</span>
+                            <i class="ri-arrow-right-s-line text-c-yellow transition-all text-2xl big-right-arrow"></i>
+                          </div>
+                          <ul class="drop-list text-sm space-y-1">
+                            <li>
+                              <a
+                              id="user-privilege"
+                              class="block py-1 px-8 rounded-r-md w-full flex justify-between items-center subdrop"
+                              onclick="event.stopPropagation();toggleSubDropuser('subdrop-user', this)"
+                              href="user-privilege-mgt.html"
+                              >
+                                <span>User Privilege</span>
+                                <i class="ri-arrow-right-s-line text-c-yellow text-2xl subdrop-right-user"></i>
+                              </a>
+                              <ul class="drop-list text-sm space-y-1 hidden md:hidden" id="subdrop-user">
+                                <li>
                                     <a href="#" class="block py-2 px-8 rounded-r-md w-full flex justify-between items-center">
-                                      <span>Client List</span>
-                                      
+                                        <span>Permissions Dashboard</span>
                                     </a>
-                                  </li>
-                                  <li>
-                                    <a
-                                      href="#"
-                                      class="block py-2 px-8 rounded-r-md w-full flex justify-between items-center"
-                                    >
-                                      <span>Group</span>
-                                      
+                                </li>
+                                <li>
+                                    <a href="#" class="block py-2 px-8 rounded-r-md w-full flex justify-between items-center"
+                                       onclick="event.stopPropagation(); toggleSubDropchild('subdrop-child', this)">
+                                        <span>Request Status</span>
+                                        <i class="ri-arrow-right-s-line text-c-yellow text-2xl subdrop-right-child"></i>
                                     </a>
-                                  </li>
-                                  <li>
-                                    <a
-                                      href="#"
-                                      class="block py-2 px-8 rounded-r-md w-full flex justify-between items-center"
-                                    >
-                                      <span>Role</span>
-                                      
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a
-                                      href="#"
-                                      class="block py-2 px-8 rounded-r-md w-full flex justify-between items-center"
-                                    >
-                                      <span>User</span>
-                                      
-                                    </a>
-                                  </li>
-                                </ul>
-                              </li>
-                              <li>
-                                <a
-                                  id="Company"
-                                  class="block py-1 px-8 rounded-r-md w-full flex justify-between items-center subdrop"
-                                  onclick="event.stopPropagation();toggleSubDropMenu('subdrop-menu', this)"
-                                >
-                                  <span>Company</span>
-                                  <i class="ri-arrow-right-s-line text-c-yellow text-2xl subdrop-right-arrow"></i>
-                                </a>
-                                <ul class="drop-list text-sm space-y-1 hidden" id="subdrop-menu">
-                                  <li>
-                                    <a href="#" class="block py-2 px-8 rounded-r-md w-full flex justify-between items-center">
-                                      <span>Company List</span>
-                                      
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a
-                                      href="#"
-                                      class="block py-2 px-8 rounded-r-md w-full flex justify-between items-center"
-                                    >
-                                      <span>Group</span>
-                                      
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a
-                                      href="#"
-                                      class="block py-2 px-8 rounded-r-md w-full flex justify-between items-center"
-                                    >
-                                      <span>Role</span>
-                                      
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a
-                                      href="#"
-                                      class="block py-2 px-8 rounded-r-md w-full flex justify-between items-center"
-                                    >
-                                      <span>User</span>
-                                      
-                                    </a>
-                                  </li>
-                                </ul>
-                              </li>
+                            
+                                    <!-- Child Submenu -->
+                                    <ul class="drop-list text-sm space-y-1 hidden" id="subdrop-child">
+                                        <li><a href="#" class="block py-2 px-8 rounded-r-md w-full" onclick="showDiv(1)">All Requests</a></li>
+                                        <li><a href="#" class="block py-2 px-8 rounded-r-md w-full" onclick="showDiv(2)">Pending Requests</a></li>
+                                        <li><a href="#" class="block py-2 px-8 rounded-r-md w-full" onclick="showDiv(3)">Rejected Requests</a></li>
+                                        <li><a href="#" class="block py-2 px-8 rounded-r-md w-full" onclick="showDiv(4)">Approved Requests</a></li>
+                                        <li><a href="#" class="block py-2 px-8 rounded-r-md w-full" onclick="showDiv(5)">Cancelled Requests</a></li>
+                                    </ul>
+                                </li>
                             </ul>
-                          </div>
-                        </li>
-                        <li>
-                          <div
-                            role="button"
-                            onclick="toggleDropMenu(this)"
-                            class="drop-menu cursor-pointer rounded-r-lg"
-                          >
-                            <div
-                              class="w-full px-6 py-3 flex justify-between items-center"
-                              href="#"
-                            >
-                              <span class="font-normal">Privilege Management</span>
-                              <i
-                                class="ri-arrow-right-s-line text-c-yellow transition-all text-2xl big-right-arrow"
-                              ></i>
-                            </div>
-                            <ul class="drop-list text-sm space-y-1">
-                              <li>
-                                <a
-                                  href="user-privilege-mgt.html"
-                                  class="block py-2 px-8 rounded-r-md w-full flex justify-between items-center"
-                                >
-                                  <span class="font-normal">User Privilege</span>
-                                  <i
-                                    class="ri-arrow-right-s-line text-c-yellow right-arrow text-2xl"
-                                  ></i>
-                                </a>
-                              </li>
-                              <li>
-                                <a
-                                  href="admin-privilege-mgt.html"
-                                  class="block py-2 px-8 rounded-r-md w-full flex justify-between items-center"
-                                >
-                                  <span class="font-normal">Admin Privilege</span>
-                                  <i
-                                    class="ri-arrow-right-s-line text-c-yellow right-arrow text-2xl"
-                                  ></i>
-                                </a>
-                              </li>
-                            </ul>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
+                            
+                            </li>
+                            <li>
+                              <a id="admin-privilege" class="block py-1 px-8 rounded-r-md w-full flex justify-between items-center subdrop"
+                                  
+                                  href="admin-privilege-mgt.html">
+                                  <span class="py-2">Admin Privilege</span>
+                                  <i class="ri-arrow-right-s-line text-c-yellow text-2xl subdrop-right-admin"></i>
+                              </a>
+                              <!-- <ul class="drop-list text-sm space-y-1 block md:hidden" id="subdrop-admin">
+                                <li>
+                                  <a href="#" onclick="showTab('user-request')" class="block py-2 px-8 rounded-r-md w-full flex justify-between items-center">
+                                    <span>User Requests</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#" onclick="showTab('manage-permision')" class="block py-2 px-8 rounded-r-md w-full flex justify-between items-center">
+                                    <span>Manage Permissions</span>
+                                  </a>
+                                </li>
+                              </ul> -->
+                              
+                          </li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
                 </div>
-              </aside>
+              </div>
+            </aside>
               
             <!-- Topbar -->
             <div class="right-container flex-grow border h-100 main">
@@ -846,5 +871,30 @@
         </main>
         <script src="script/sidebar.js"></script>
         <script src="script/user-privilege.js"></script>
+        <script>
+          //sub dropdown toggle
+          function toggleSubDropuser() {
+            const subDrop = document.getElementById("subdrop-user");
+            const arrow = document.querySelector("#starred-link .subdrop-right-user");
+            subDrop.classList.toggle("hidden");
+            arrow.classList.toggle("rotate");
+          } 
+    
+          //sub dropdown toggle
+          function toggleSubDropadmin() {
+            const subDrop = document.getElementById("subdrop-admin");
+            const arrow = document.querySelector("#starred-link .subdrop-right-admin");
+            subDrop.classList.toggle("hidden");
+            arrow.classList.toggle("rotate");
+          }
+          //sub dropdown toggle
+          function toggleSubDropchild() {
+            const subDrop = document.getElementById("subdrop-child");
+            const arrow = document.querySelector("#starred-link .subdrop-right-child");
+            subDrop.classList.toggle("hidden");
+            arrow.classList.toggle("rotate");
+          }
+    
+        </script>
     </body>
 </html>

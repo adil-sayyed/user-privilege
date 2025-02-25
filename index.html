@@ -319,67 +319,57 @@
                         id="user-privilege"
                         class="block py-1 px-8 rounded-r-md w-full flex justify-between items-center subdrop"
                         onclick="event.stopPropagation();toggleSubDropuser('subdrop-user', this)"
+                        href="user-privilege-mgt.html"
                         >
                           <span>User Privilege</span>
                           <i class="ri-arrow-right-s-line text-c-yellow text-2xl subdrop-right-user"></i>
                         </a>
-                        <ul class="drop-list text-sm space-y-1 hidden" id="subdrop-user">
+                        <ul class="drop-list text-sm space-y-1 hidden md:hidden" id="subdrop-user">
                           <li>
-                            <a href="user-privilege-mgt.html" class="block py-2 px-8 rounded-r-md w-full flex justify-between items-center">
-                              <span>Permissions Dashboard</span>
-                              
-                            </a>
+                              <a href="#" class="block py-2 px-8 rounded-r-md w-full flex justify-between items-center">
+                                  <span>Permissions Dashboard</span>
+                              </a>
                           </li>
                           <li>
-                            <a
-                              href="#"
-                              class="block py-2 px-8 rounded-r-md w-full flex justify-between items-center"
-                              onclick="event.stopPropagation();toggleSubDropchild('subdrop-child', this)"
-                            >
-                              <span>Request Status</span>
-                              <i class="ri-arrow-right-s-line text-c-yellow text-2xl subdrop-right-child"></i>
-                              
-                            </a>
-                            <!-- Child Submenu -->
-                        <ul class="drop-list text-sm space-y-1 hidden" id="subdrop-child">
-                          <li><a href="#" class="block py-2 px-8 rounded-r-md w-full">All Requests</a></li>
-                          <li><a href="#" class="block py-2 px-8 rounded-r-md w-full">Pending Requests</a></li>
-                          <li><a href="#" class="block py-2 px-8 rounded-r-md w-full">Rejected Requests</a></li>
-                          <li><a href="#" class="block py-2 px-8 rounded-r-md w-full">Approved Requests</a></li>
-                          <li><a href="#" class="block py-2 px-8 rounded-r-md w-full">Cancelled Requests</a></li>
+                              <a href="#" class="block py-2 px-8 rounded-r-md w-full flex justify-between items-center"
+                                 onclick="event.stopPropagation(); toggleSubDropchild('subdrop-child', this)">
+                                  <span>Request Status</span>
+                                  <i class="ri-arrow-right-s-line text-c-yellow text-2xl subdrop-right-child"></i>
+                              </a>
+                      
+                              <!-- Child Submenu -->
+                              <ul class="drop-list text-sm space-y-1 hidden" id="subdrop-child">
+                                  <li><a href="#" class="block py-2 px-8 rounded-r-md w-full" onclick="showDiv(1)">All Requests</a></li>
+                                  <li><a href="#" class="block py-2 px-8 rounded-r-md w-full" onclick="showDiv(2)">Pending Requests</a></li>
+                                  <li><a href="#" class="block py-2 px-8 rounded-r-md w-full" onclick="showDiv(3)">Rejected Requests</a></li>
+                                  <li><a href="#" class="block py-2 px-8 rounded-r-md w-full" onclick="showDiv(4)">Approved Requests</a></li>
+                                  <li><a href="#" class="block py-2 px-8 rounded-r-md w-full" onclick="showDiv(5)">Cancelled Requests</a></li>
+                              </ul>
+                          </li>
                       </ul>
-                          </li>
-                          
-                        </ul>
+                      
                       </li>
                       <li>
-                        <a
-                        id="admin-privilege"
-                        class="block py-1 px-8 rounded-r-md w-full flex justify-between items-center subdrop"
-                        onclick="event.stopPropagation();toggleSubDropadmin('subdrop-admin', this)"
-                        href="#">
-                        
-                          <span class="py-2">Admin Privilege</span>
-                          <i class="ri-arrow-right-s-line text-c-yellow text-2xl subdrop-right-admin"></i>
-                          
+                        <a id="admin-privilege" class="block py-1 px-8 rounded-r-md w-full flex justify-between items-center subdrop"
+                            onclick="event.stopPropagation(); toggleSubDropadmin('subdrop-admin')"
+                            href="admin-privilege-mgt.html">
+                            <span class="py-2">Admin Privilege</span>
+                            <i class="ri-arrow-right-s-line text-c-yellow text-2xl subdrop-right-admin"></i>
                         </a>
-                        <ul class="drop-list text-sm space-y-1 hidden" id="subdrop-admin">
+                        <ul class="drop-list text-sm space-y-1 block md:hidden" id="subdrop-admin">
                           <li>
-                            <a href="admin-privilege-mgt.html" class="block py-2 px-8 rounded-r-md w-full flex justify-between items-center">
+                            <a href="#" onclick="showTab('user-request')" class="block py-2 px-8 rounded-r-md w-full flex justify-between items-center">
                               <span>User Requests</span>
-                              
                             </a>
                           </li>
                           <li>
-                            <a
-                              href="#"
-                              class="block py-2 px-8 rounded-r-md w-full flex justify-between items-center"
-                            >
+                            <a href="#" onclick="showTab('manage-permision')" class="block py-2 px-8 rounded-r-md w-full flex justify-between items-center">
                               <span>Manage Permissions</span>
                             </a>
                           </li>
                         </ul>
-                      </li>
+                        
+                    </li>
                     </ul>
                   </div>
                 </li>
