@@ -350,12 +350,12 @@
                         </li>
                         <li>
                           <a id="admin-privilege" class="block py-1 px-8 rounded-r-md w-full flex justify-between items-center subdrop"
-                            onclick="event.stopPropagation(); toggleSubDropadmin('subdrop-admin')"
+                            onclick="event.stopPropagation(); toggleSubDropadmin('subdrop-admin', this)"
                             href="admin-privilege-mgt.html">
                             <span class="py-2">Admin Privilege</span>
                             <i class="ri-arrow-right-s-line text-c-yellow text-2xl subdrop-right-admin"></i>
                           </a>
-                          <ul class="drop-list text-sm space-y-1 block md:hidden" id="subdrop-admin">
+                          <ul class="drop-list text-sm space-y-1 block md:hidden hidden" id="subdrop-admin">
                             <li>
                               <a href="#" onclick="event.stopPropagation();showTab('user-request')" class="block py-2 px-8 rounded-r-md w-full flex justify-between items-center">
                                 <span>User Requests</span>
@@ -367,8 +367,8 @@
                               </a>
                             </li>
                           </ul>
-                          
-                      </li>
+                        </li>
+                        
                       </ul>
                     </div>
                   </li>
@@ -646,6 +646,8 @@
 
         // Run on window resize to handle viewport changes
         window.addEventListener("resize", removeHrefOnMobile);
+
+        
       </script>
     </body>
 </html>

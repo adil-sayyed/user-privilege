@@ -432,24 +432,25 @@
                         </div>
                     </div>
 
-                    <!-- Container -->
-                    <div class="relative inline-block text-left flex justify-center py-2">
+                    <!-- Container (Hidden on Mobile, Visible on Tablet & Desktop) -->
+                    <div class="relative inline-block text-left flex justify-center py-2 hidden sm:flex">
                         
-                        <!-- Button -->
-                        <div class="flex flex-wrap gap-2 md:gap-10">
-                            <button onclick="showDiv(0)" class="uspr-tab-control">Permissions Dashboard </button>
-                            <div class="relative inline-block ml-2">
-                                <button onclick="toggleDropdown(event)" class=" relative uspr-tab-control">Request Status <i class="ri-arrow-down-s-fill"></i></button>
-                                <div id="dropdown-menu" class="absolute mt-2 w-48 bg-white shadow-lg rounded-md border border-gray-200 hidden">
-                                    <button onclick="showDiv(1)" class="block w-full text-left px-4 py-2 drop-menu-buttn">All Requests</button>
-                                    <button onclick="showDiv(2)" class="block w-full text-left px-4 py-2 drop-menu-buttn">Pending Requests</button>
-                                    <button onclick="showDiv(3)" class="block w-full text-left px-4 py-2 drop-menu-buttn">Rejected Requests</button>
-                                    <button onclick="showDiv(4)" class="block w-full text-left px-4 py-2 drop-menu-buttn">Approved Requests</button>
-                                    <button onclick="showDiv(5)" class="block w-full text-left px-4 py-2 drop-menu-buttn">Cancelled Request</button>
-                                </div>
-                            </div>
-                        </div>
+                      <!-- Button -->
+                      <div class="flex flex-wrap gap-2 md:gap-10">
+                          <button onclick="showDiv(0)" class="uspr-tab-control">Permissions Dashboard </button>
+                          <div class="relative inline-block ml-2">
+                              <button onclick="toggleDropdown(event)" class="relative uspr-tab-control">Request Status <i class="ri-arrow-down-s-fill"></i></button>
+                              <div id="dropdown-menu" class="absolute mt-2 w-48 bg-white shadow-lg rounded-md border border-gray-200 hidden">
+                                  <button onclick="showDiv(1)" class="block w-full text-left px-4 py-2 drop-menu-buttn">All Requests</button>
+                                  <button onclick="showDiv(2)" class="block w-full text-left px-4 py-2 drop-menu-buttn">Pending Requests</button>
+                                  <button onclick="showDiv(3)" class="block w-full text-left px-4 py-2 drop-menu-buttn">Rejected Requests</button>
+                                  <button onclick="showDiv(4)" class="block w-full text-left px-4 py-2 drop-menu-buttn">Approved Requests</button>
+                                  <button onclick="showDiv(5)" class="block w-full text-left px-4 py-2 drop-menu-buttn">Cancelled Request</button>
+                              </div>
+                          </div>
+                      </div>
                     </div>
+
                     <hr>
                     <!-- Main content -->
                     <div class="py-2 px-4 overflow-y-auto">
